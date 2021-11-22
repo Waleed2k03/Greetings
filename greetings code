@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout << "Enter a time in 24 hours to check whether it is morning, afternoon, evening or night\n";
+    double time;
+    cin >> time;
+    if (time < 12)
+    {
+            cout << "Good morning";
+}
+    else if (time >= 12 && time < 18)
+    {
+        cout << "Good afternoon";
+}
+    else if (time >= 18 && time < 21)
+    {
+        cout << "Good evening";
+    }
+    else if (time >= 21 && time < 24)
+    {
+        cout << "Good night";
+    }
+    else
+    {
+        cout << "Time not valid";
+    }
+}
